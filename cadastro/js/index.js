@@ -22,9 +22,9 @@ function validar(){
        camposComProblemas.push("Campo instagram não preenchido.") 
    }
    //alert(camposComProblemas);   
-   AdicionarNaTela();
+   AdicionarNaTela(name, telefone, endereco, instagram);
 }
-function AdicionarNaTela(){    
+function AdicionarNaTela(name, telefone, endereco, instagram){    
     var tabela = document.querySelector('#tabela');    
     var body = tabela.querySelector('#corpoTabela');     
     var linha = document.createElement('tr');
@@ -33,10 +33,10 @@ function AdicionarNaTela(){
     var tdTelefone = document.createElement('td');
     var tdInstagram = document.createElement('td');
 
-    tdEndereco.innerText = "Rua Pres. Getúlio Vargas";
-    tdNome.innerText = "Jonathan Suter";
-    tdTelefone.innerText = "47 99999999";
-    tdInstagram.innerText = "jvsuter";
+    tdEndereco.innerText = endereco;
+    tdNome.innerText = nome;
+    tdTelefone.innerText = telefone;
+    tdInstagram.innerText = instagram;
 
     linha.appendChild(tdNome);
     linha.appendChild(tdEndereco);
