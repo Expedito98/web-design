@@ -20,8 +20,12 @@ function validar(){
    }
    if(instagram === '' || instagram === undefined || instagram === null){
        camposComProblemas.push("Campo instagram não preenchido.") 
+   }  
+   if(camposComProblemas.length > 0){
+    alert(camposComProblemas);
+    return;
    }
-   //alert(camposComProblemas);   
+
    AdicionarNaTela(name, telefone, endereco, instagram);
 }
 function AdicionarNaTela(name, telefone, endereco, instagram){    
