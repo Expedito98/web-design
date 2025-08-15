@@ -26,9 +26,9 @@ function validar(){
     return;
    }
 
-   AdicionarNaTela(name, telefone, endereco, instagram);
+   AdicionarNaTela(nome, telefone, endereco, instagram);
 }
-function AdicionarNaTela(name, telefone, endereco, instagram){    
+function AdicionarNaTela(nome, telefone, endereco, instagram){    
     var tabela = document.querySelector('#tabela');    
     var body = tabela.querySelector('#corpoTabela');     
     var linha = document.createElement('tr');
